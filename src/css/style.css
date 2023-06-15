@@ -1,0 +1,77 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--background-color);
+    font-weight: 800;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--advice-card-color);
+    padding: 15px;
+    min-width: 475px;
+    width: 25%;
+    border-radius: 10px;
+}
+
+.card h3{
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: var(--advice-dice-color);
+}
+
+.card p{
+    padding: 10px;
+    margin: 15px;
+    color: var(--text-color);
+    font-size: 24px;
+    text-align: center;
+}
+
+.card picture{
+    margin: 15px 0px 50px 0px;
+}
+
+.card img{
+    max-width: 100%;
+    padding: 0px 20px;
+}
+
+.card .advice-button{
+    position: absolute;
+    bottom: -30px;
+    background-color: var(--advice-dice-color);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.card .advice-button:hover{
+    animation-name: anima;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: var(--advice-dice-color);
+    cursor: pointer;
+    box-shadow: 0 5px 15px var(--advice-dice-color);
+}
+
+@keyframes anima {
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.1);
+    }
+}

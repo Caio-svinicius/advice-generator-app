@@ -1,0 +1,12 @@
+@media(max-width: 425px){
+
+.card{
+    min-width: 85%;
+}
+
+.card p{
+    font-size: 22px;
+}
+
+
+}

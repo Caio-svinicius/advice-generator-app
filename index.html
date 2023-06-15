@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/global.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet"/>
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon"/>
+
+    <title>App gerador de conselhos</title>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <h3 id="advice-number" class="advice-number">ADVICE #</h3>
+        <p id="advice" class="advice">"Click on button to receive an advice"</p>
+        <picture>
+            <source srcset="./src/images/pattern-divider-mobile.svg" media="(max-width: 768px)"/>
+            <img src="./src/images/pattern-divider-desktop.svg" alt="Divisor de divs."/>
+        </picture>
+        <button class="advice-button" type="button">
+            <img src="./src/images/icon-dice.svg" alt="Icone de dado" />
+        </button>
+      </div>
+    </main>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
